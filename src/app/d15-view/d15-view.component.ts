@@ -17,8 +17,9 @@ export class D15ViewComponent implements OnInit, AfterViewInit {
 
   x2Scale = d3.scaleBand()
     .domain(['Liikuntakyky', 'Näkö', 'Kuulo', 'Hengitys', 'Nukkuminen', 'Syöminen', 'Puhe', 'Eritys',
-              'Tavanomaiset toiminnot', 'Henkinen toiminta', 'Vaivat ja oireet', 'Masentuineisuus',
-              'Ahdistuneisuus', 'Energisyys', 'Sukupuolielämä']).range([0, 2000]);
+      'Tavanomaiset toiminnot', 'Henkinen toiminta', 'Vaivat ja oireet', 'Masentuineisuus',
+      'Ahdistuneisuus', 'Energisyys', 'Sukupuolielämä'])
+    .range([0, 2000]);
 
   constructor(private renderer: Renderer2) { }
 
