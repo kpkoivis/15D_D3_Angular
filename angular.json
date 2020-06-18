@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "d15-d3-angular"
+    }
+  },
+  "defaultProject": "d15-d3-angular",
+  "cli": {
+    "analytics": "9acd8996-66a0-4075-84e5-ed0a1337112a"
+  }
 }
