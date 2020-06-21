@@ -86,7 +86,8 @@ export class D15ViewComponent implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     const element = this.chartContainer.nativeElement;
 
-    this.width = element.offsetWidth / 2;
+    // this.width = element.offsetWidth / 2;
+    this.width = 1500;
     this.height = 350;
 
     const svg = d3.select(element)
@@ -124,7 +125,7 @@ export class D15ViewComponent implements OnInit, AfterViewInit {
       svg.append('line')
         .attr('x1', 0)
         .attr('y1', this.yScale(yValue))
-        .attr('x2', this.width)
+        .attr('x2', 800)
         .attr('y2', this.yScale(yValue))
         .style('stroke', 'lightgrey')
         .style('stroke-width', 1)
